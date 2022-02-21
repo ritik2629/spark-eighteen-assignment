@@ -55,7 +55,7 @@ return(
         {state.map((item)=>{
             const {id,thumbnail_image,event_name,event_date,views,likes,shares}=item;
             return (
-                <article className="container">
+                <article key={Math.random()} className="container">
                 <Card sx={{ maxWidth: 645 }} key={event_name} className="card">
                   <CardHeader
                     title={event_name}
